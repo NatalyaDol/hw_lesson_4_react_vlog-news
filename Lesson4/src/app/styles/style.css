@@ -1,51 +1,97 @@
-.textContainer{
+@charset "UTF-8";
+.textContainer {
   display: block;
-  background: #f2fcf3;
-  border: 1px solid #2ac732; /* рамка */
+  background: #fcf2fc69;
+  border: 1px solid #c72aad;
+  /* рамка */
   margin: 10px 10px 20px 10px;
   font-family: Arial;
   font-size: 0.95em;
-  
+  padding: 10px;
 }
-.dataPublication{
+
+.dataPublication {
   font-size: 0.75em;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 2px;
 }
-.authorPublication{
+
+.authorPublication {
   font-size: 0.8em;
   padding-left: 10px;
 }
-.textContainerTitle{
-  color: #13941a; /*green*/
+
+.textContainerTitle {
+  color: #941389;
+  /*green*/
   margin-top: 15px;
   font-family: Arial;
   font-size: 1.09em;
-  text-indent:1.8em; /*красная строка*/
+  text-indent: 1.8em;
+  /*красная строка*/
   font-weight: bold;
 }
-.textContainerContent{
-  text-indent:1.5em; /*красная строка*/
+
+.textContainerContent {
+  text-indent: 1.5em;
+  /*красная строка*/
   text-align: justify;
   padding: 10px 10px 0px 10px;
 }
-.sourcePublication{
-   font-size: 0.8em;
-   padding: 10px;
+
+.sourcePublication {
+  font-size: 0.8em;
+  padding: 10px;
 }
-a.btn {
-  color: #fff; /* цвет текста */
-  text-decoration: none; /* подчёрк */
-  user-select: none; /*выделение текста */
-  background: rgb(37, 130, 26); /*фон кноп*/
-  padding: 0.7em 1.5em; /*отступ от текста*/
+
+button {
+  color: #fff;
+  /* цвет текста */
+  text-decoration: none;
+  /* подчёрк */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /*выделение текста */
+  background: #821a82;
+  /*фон кноп*/
+  padding: 0.7em 1.5em;
+  /*отступ от текста*/
   margin-left: 82%;
-  outline: none; /*контур в Mozilla */
+  outline: none;
+  /*контур в Mozilla */
 }
-a.btn:hover {
-  background: rgb(37, 164, 26);
-} /* при наведении курсора*/
-a.btn:active {
-  background: rgb(37, 100, 26);
-} /* при нажатии */
+
+button {
+  color: #fff;
+  /* цвет текста */
+  text-decoration: none;
+  /* подчёрк */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /*выделение текста */
+  background: #681261;
+  /*фон кноп*/
+  padding: 0.7em 1.5em;
+  /*отступ от текста*/
+  margin-left: 82%;
+  outline: none;
+  /*контур в Mozilla */
+  border-radius: 50px;
+}
+
+button:hover {
+  background: #25a41a;
+}
+
+/* при наведении курсора*/
+button:active {
+  background: #25641a;
+}
+
+/* при нажатии */
+/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Blog from '../src/app/components/Blog';
+import BlogElement from '../src/app/components/BlogElement';
 // import WelcomeModal from '../src/app/components/WelcomeModal';
 import './app/styles/style.css';
 
@@ -20,7 +20,7 @@ class App extends React.Component {
 
     return (
       <div>
-          <Blog items={menuItems}/>
+          <BlogElement items={menuItems}/>
           
       </div>);
   }

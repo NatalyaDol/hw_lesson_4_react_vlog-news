@@ -1,6 +1,7 @@
 import React from 'react';
 
-class Blog extends React.Component {
+import BtnDelete from './BtnDelete';
+class BlogElement extends React.Component {
     render() {
         const items = this.props.items.map((item, index) => {
           return <div className="textContainer" key={index}>
@@ -15,6 +16,7 @@ class Blog extends React.Component {
                 <div className="textContainerContent">
                     {item.textContainerContent}
                 </div>
+                <BtnDelete/>
 
             </div>
         })
@@ -29,4 +31,4 @@ class Blog extends React.Component {
       }
 }
 
-export default Blog;
+export default BlogElement;
