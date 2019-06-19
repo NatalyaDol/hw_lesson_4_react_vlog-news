@@ -1,13 +1,13 @@
 .textContainer{
-    display: block;
-    background: #fcf2fc69;
-    border: 1px solid #c72aad; /* рамка */
-    margin: 10px 10px 20px 10px;
-    font-family: Arial;
-    font-size: 0.95em;
-    padding: 10px;
-    
-  }
+  // display: block;
+  // background: #fcf2fc69;
+  // border: 1px solid #c72aad; /* рамка */
+  // margin: 10px 10px 20px 10px;
+  // font-family: Arial;
+  // font-size: 0.95em;
+  // padding: 10px;
+  // border-radius: 50px;
+
   .dataPublication{
     font-size: 0.75em;
     padding-top: 10px;
@@ -32,8 +32,8 @@
     padding: 10px 10px 0px 10px;
   }
   .sourcePublication{
-     font-size: 0.8em;
-     padding: 10px;
+      font-size: 0.8em;
+      padding: 10px;
   }
   button {
     color: #fff; /* цвет текста */
@@ -60,5 +60,29 @@
   button:active {
     background: rgb(37, 100, 26);
   } /* при нажатии */
+}
+.textContainer:nth-child(2n+1) {
+  display: block;
+  background: #fcf2fc69;
+  border: 1px solid #c72aad; /* рамка */
+  margin: 10px 10px 20px 10px;
+  font-family: Arial;
+  font-size: 0.95em;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.textContainer:nth-child(2n) {
+  display: block;
+  background: #f2fcf369;
+  border: 1px solid #136611; /* рамка */
+  margin: 10px 10px 20px 10px;
+  font-family: Arial;
+  font-size: 0.95em;
+  padding: 10px;
+  border-radius: 50px;
+}
+  
+  
   
   

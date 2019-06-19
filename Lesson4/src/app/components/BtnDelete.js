@@ -6,15 +6,6 @@ class BtnDelete extends React.Component {
             <button>удалить</button>
         );
     }
-    
-    // return (
-    //     // <nav className="header">
-    //     //     <ul className="navigation__menu">
-    //     //         {items}
-    //     //     </ul>
-    //     // </nav>
-    // );
-    
 }
 
 export default BtnDelete;

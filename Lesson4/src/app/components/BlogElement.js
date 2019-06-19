@@ -17,7 +17,6 @@ class BlogElement extends React.Component {
                     {item.textContainerContent}
                 </div>
                 <BtnDelete/>
-
             </div>
         })
     

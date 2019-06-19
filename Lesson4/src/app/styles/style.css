@@ -1,29 +1,22 @@
 @charset "UTF-8";
 .textContainer {
-  display: block;
-  background: #fcf2fc69;
-  border: 1px solid #c72aad;
-  /* рамка */
-  margin: 10px 10px 20px 10px;
-  font-family: Arial;
-  font-size: 0.95em;
-  padding: 10px;
-  border-radius: 50px;
+  /* при наведении курсора*/
+  /* при нажатии */
 }
 
-.dataPublication {
+.textContainer .dataPublication {
   font-size: 0.75em;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 2px;
 }
 
-.authorPublication {
+.textContainer .authorPublication {
   font-size: 0.8em;
   padding-left: 10px;
 }
 
-.textContainerTitle {
+.textContainer .textContainerTitle {
   color: #941389;
   /*green*/
   margin-top: 15px;
@@ -34,19 +27,19 @@
   font-weight: bold;
 }
 
-.textContainerContent {
+.textContainer .textContainerContent {
   text-indent: 1.5em;
   /*красная строка*/
   text-align: justify;
   padding: 10px 10px 0px 10px;
 }
 
-.sourcePublication {
+.textContainer .sourcePublication {
   font-size: 0.8em;
   padding: 10px;
 }
 
-button {
+.textContainer button {
   color: #fff;
   /* цвет текста */
   text-decoration: none;
@@ -65,7 +58,7 @@ button {
   /*контур в Mozilla */
 }
 
-button {
+.textContainer button {
   color: #fff;
   /* цвет текста */
   text-decoration: none;
@@ -85,14 +78,35 @@ button {
   border-radius: 50px;
 }
 
-button:hover {
+.textContainer button:hover {
   background: #25a41a;
 }
 
-/* при наведении курсора*/
-button:active {
+.textContainer button:active {
   background: #25641a;
 }
 
-/* при нажатии */
+.textContainer:nth-child(2n+1) {
+  display: block;
+  background: #fcf2fc69;
+  border: 1px solid #c72aad;
+  /* рамка */
+  margin: 10px 10px 20px 10px;
+  font-family: Arial;
+  font-size: 0.95em;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.textContainer:nth-child(2n) {
+  display: block;
+  background: #f2fcf369;
+  border: 1px solid #136611;
+  /* рамка */
+  margin: 10px 10px 20px 10px;
+  font-family: Arial;
+  font-size: 0.95em;
+  padding: 10px;
+  border-radius: 50px;
+}
 /*# sourceMappingURL=style.css.map */
