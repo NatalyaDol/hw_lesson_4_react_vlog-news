@@ -1,6 +1,5 @@
 import React from 'react';
 
-import BtnDelete from './BtnDelete';
 class BlogElement extends React.Component {
     render() {
         const items = this.props.items.map((item, index) => {
@@ -16,7 +15,6 @@ class BlogElement extends React.Component {
                 <div className="textContainerContent">
                     {item.textContainerContent}
                 </div>
-                <BtnDelete/>
             </div>
         })
     
