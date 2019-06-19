@@ -28,7 +28,7 @@ class BlogElement extends React.Component {
                 </ul>
             </nav>
         );
-      }
+    }
 }
 
 export default BlogElement;
