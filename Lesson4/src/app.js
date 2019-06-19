@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ContainerForBlogElements from '../src/app/components/ContainerForBlogElements';
+import Blog from '../src/app/components/Blog';
 import WelcomeModal from "../src/app/components/WelcomeModal";
 // import WelcomeModal from '../src/app/components/WelcomeModal';
 import './app/styles/style.css';
@@ -12,7 +12,7 @@ class App extends React.Component {
     return (
       <div>
         
-        <ContainerForBlogElements/>   
+        <Blog/>   
         <WelcomeModal/>
       </div>);
   }
