@@ -12,7 +12,7 @@ class Blog extends React.Component {
         return (
           <div>
             <Post items={MENUITEMS}/>  
-          </div>);
+          </div>)
     }
 }
 export default Blog;

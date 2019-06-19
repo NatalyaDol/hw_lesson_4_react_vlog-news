@@ -27,12 +27,12 @@ class WelcomeModal extends React.Component {
                     <p>Приветик</p>
                 </div>
                 </div>
-            </section>;
+            </section>
         }
 
         return (
             <div>
-                { visibleModal };
+                { visibleModal }
             </div>
         )
     }

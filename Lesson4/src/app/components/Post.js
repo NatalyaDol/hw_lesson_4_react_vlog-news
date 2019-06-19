@@ -19,27 +19,34 @@ export default class Post extends React.Component {
     addNewItems () {
         console.log(this.myRefComment.current.value, this.myRefName.current.value);
 
+        // получение введенных данных через метод ref={this.myRefName}
         let userName = this.myRefName.current.value;
         let userComments = this.myRefComment.current.value;
         let date = String(new Date);
 
+        //новый объект на основе введенных данных user
         let newComment = { dataPublication: date, authorPublication: userName, textContainerTitle: userComments, textContainerContent: userComments};
 
-        let items = [...this.state.items, newComment];
+        const items = [...this.state.items, newComment];
         console.log(items);
         
-        //перерисовка
-        this.setState ({ items: items });
-        console.log(items);
+        
 
         //очистка введенных полей 
         this.myRefName.current.value = '';
         this.myRefComment.current.value = '';
+
+        //перерисовка
+        this.setState({ items: items });
+        console.log("newsetState");
+        
     }
     
 
     render() {
-        const items = this.props.items.map((item, index) => {
+        console.log("!!!!!!!отрисовка по MAP");
+        
+        const items = this.state.items.map((item, index) => {
           return <div className="textContainer" key={index}>
                 <div className="dataPublication">{item.dataPublication}</div>
                 <div className="authorPublication">
@@ -70,43 +77,3 @@ export default class Post extends React.Component {
     }
 }
 
-//export default Post;
-
-
-//import React from 'react';
-
-// class Post extends React.Component {
-//     render() {
-//         const items = this.props.items.map((item, index) => {
-//           return <div className="textContainer" key={index}>
-//                 <div className="dataPublication">{item.dataPublication}</div>
-//                 <div className="authorPublication">
-//                     <span>Автор:</span>
-//                     <span>{item.authorPublication}</span>
-//                 </div>
-//                 <div className="textContainerTitle">
-//                     {item.textContainerTitle}
-//                 </div>
-//                 <div className="textContainerContent">
-//                     {item.textContainerContent}
-//                 </div>
-//             </div>
-//         })
-    
-//         return (
-//             <div>
-//                 {items} 
-//                 <form>
-//                     <input type="text" placeholder="Ваше имя"></input>
-//                     <br></br>
-//                     <textarea rows="10" cols="45" placeholder="Комментарий"></textarea>
-//                     <br></br>
-//                     <button onClick={()}>Добавить Lorem :)))))</button>
-
-//                 </form>
-//             </div>
-//         );
-//     }
-// }
-
-// export default Post;
