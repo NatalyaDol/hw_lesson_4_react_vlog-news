@@ -21,11 +21,9 @@ class BlogElement extends React.Component {
         })
     
         return (
-            <nav className="header">
-                <ul className="navigation__menu">
-                    {items}
-                </ul>
-            </nav>
+            <div>
+                {items} 
+            </div>
         );
     }
 }

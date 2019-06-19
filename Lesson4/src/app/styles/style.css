@@ -1,22 +1,23 @@
 @charset "UTF-8";
-.textContainer {
+body .textContainer {
+  width: 100%;
   /* при наведении курсора*/
   /* при нажатии */
 }
 
-.textContainer .dataPublication {
+body .textContainer .dataPublication {
   font-size: 0.75em;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 2px;
 }
 
-.textContainer .authorPublication {
+body .textContainer .authorPublication {
   font-size: 0.8em;
   padding-left: 10px;
 }
 
-.textContainer .textContainerTitle {
+body .textContainer .textContainerTitle {
   color: #941389;
   /*green*/
   margin-top: 15px;
@@ -27,19 +28,19 @@
   font-weight: bold;
 }
 
-.textContainer .textContainerContent {
+body .textContainer .textContainerContent {
   text-indent: 1.5em;
   /*красная строка*/
   text-align: justify;
   padding: 10px 10px 0px 10px;
 }
 
-.textContainer .sourcePublication {
+body .textContainer .sourcePublication {
   font-size: 0.8em;
   padding: 10px;
 }
 
-.textContainer button {
+body .textContainer button {
   color: #fff;
   /* цвет текста */
   text-decoration: none;
@@ -58,7 +59,7 @@
   /*контур в Mozilla */
 }
 
-.textContainer button {
+body .textContainer button {
   color: #fff;
   /* цвет текста */
   text-decoration: none;
@@ -78,15 +79,15 @@
   border-radius: 50px;
 }
 
-.textContainer button:hover {
+body .textContainer button:hover {
   background: #25a41a;
 }
 
-.textContainer button:active {
+body .textContainer button:active {
   background: #25641a;
 }
 
-.textContainer:nth-child(2n+1) {
+body .textContainer:nth-child(2n+1) {
   display: block;
   background: #fcf2fc69;
   border: 1px solid #c72aad;
@@ -98,7 +99,7 @@
   border-radius: 50px;
 }
 
-.textContainer:nth-child(2n) {
+body .textContainer:nth-child(2n) {
   display: block;
   background: #f2fcf369;
   border: 1px solid #136611;
@@ -108,5 +109,48 @@
   font-size: 0.95em;
   padding: 10px;
   border-radius: 50px;
+}
+
+body .modal-window #modal-window__btn {
+  width: 43px;
+  height: 43px;
+  padding: .5rem;
+  border-radius: 70px;
+  background-color: rgba(234, 0, 255, 0.548);
+  position: absolute;
+  top: 0;
+  left: 88%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+body .modal-window .modal-window__block {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: linear-gradient(10deg, rgba(127, 0, 82, 0.6), #250a1ce3);
+}
+
+body .modal-window .modal-window__block .modal-window__block__content {
+  background-color: #ffffffc5;
+  margin: 150px auto;
+  padding: 20px;
+  width: 310px;
+  border-radius: 50px;
+}
+
+body .modal-window .modal-window__block .modal-window__block__content span {
+  float: right;
+  cursor: pointer;
+}
+
+body .modal-window .modal-window__block .modal-window__block__content p {
+  text-align: center;
+  margin: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
